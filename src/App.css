@@ -1,38 +1,97 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.appWrp {
+  margin: 20px 20px;
+}
+
+.containerModule {
+  margin: 20px 250px;
+  max-width: 1920px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.productCard {
+  width: calc(33% - 100px);
+  text-align: center;
+  padding: 30px 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgb(245 245 245);
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.35));
+  border-radius: 5px;
+}
+
+.title {
+  font-weight: 400;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.color {
+  font-weight: lighter;
+  color: grey;
+}
+
+.productImg {
+  width: 100%;
+}
+
+.priceAndBuy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(199 74 59);
+}
+
+.buyBtn {
+  padding: 5px 15px;
+  border-radius: 50px;
+  border: 1px solid rgb(199 74 59);
+  text-transform: uppercase;
+  color: rgb(199 74 59);
+}
+
+/* ----------------------------------------------- */
+
+/* .containerTable {
+  margin: 0 100px;
+} */
+
+.productCardTable {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px;
+  margin: 0 100px 1px;
+  background-color: rgb(245 245 245);
+}
+
+.titleTable {
+  font-weight: 200;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.productImgTable{
+  width: 100px;
+}
+
+.active {
+  display: flex;
+}
+.taskTitle{
+  position: relative;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.material-icons {
+  position: absolute;
+  top: 10px;
+  right: 100px;
 }
